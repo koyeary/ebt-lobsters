@@ -2,8 +2,7 @@
 	{{burger_name}}
 
 	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		{{#if devoured}}devoured TIME!{{else}}WAKE UP!{{/if}}
+		{{#if devoured}} devoured {{else}} on the menu {{/if}}
 	</button>
 
-	<button class="devour-burger" data-id="{{this.id}}">Devour!</button>
 </li>
