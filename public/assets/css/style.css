@@ -4,12 +4,17 @@ body {
     font-weight: 300;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Pacifico', cursive;
+}
+
+h1 {
+    text-shadow: -4px 3px 0 #adfdce, -14px 7px 0 #fcea65;
     color: #fc65d6;
 }
 
-h3 {
+button {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 500;
+    font-size: 14px;
 }
+

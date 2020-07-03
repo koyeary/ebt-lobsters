@@ -5,13 +5,13 @@
     <div class="row">
     <h1 class="center-align">Burgers!</h1>
     </div>
-    <div class="row"><div class="center-align"><img src="/assets/burger.png"></div></div>
+    <div class="row"><div class="center-align"><img class="responsive-img" src="/assets/burger.png"></div></div>
     </div>
   <div class="col s4"></div>  
 </div>
 <div class="row">
 
-<div class="col s6">
+<div class="col s6 center-align">
 <h3>On the Menu</h3>
 
 <ul class="flow-text">
@@ -23,7 +23,7 @@
 </ul>
 </div>
 
-  <div class="col s6">
+  <div class="col s6 center-align">
 <h3>Devoured</h3>
 
 <ul class="flow-text">
@@ -37,8 +37,8 @@
 
 </div>
 
-<div class="row">
-<h4>Add a Burger</h4>
+<div class="row center-align">
+<h2>Add a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -46,11 +46,11 @@
     <input type="text" id="bu" name="name">
   </div>
 
-  <div class="form-group">
-    <label for="devoured">Devoured</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-  <input type="radio" name="devoured" value="0"> On the menu 
-  </div>
+  
+    
+    {{!-- <input type="radio" name="devoured" value="1" checked> <span>Devoured!</span><br>
+    <input type="radio" name="devoured" value="0"> <span>On the menu</span> --}}
+  
  
 
   <button type="submit">Add Burger</button>
