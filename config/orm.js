@@ -6,7 +6,7 @@ const connection = require("../config/connection.js");
 // In order to write the query, we need 3 question marks.
 // The above helper function loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string.
 // ["?", "?", "?"].toString() => "?,?,?";
- function printQuestionMarks(num) {
+function printQuestionMarks(num) {
   let arr = [];
 
   for (let i = 0; i < num; i++) {
@@ -21,37 +21,37 @@ function objToSql(ob) {
   let arr = [];
 
   // loop through the keys and push the key/value as a string int arr
-   for (let key in ob) {
+  for (let key in ob) {
     const value = ob[key];
     // check to skip hidden properties
     if (Object.hasOwnProperty.call(ob, key)) {
-      // if string with spaces, add quotations (Lana Del Grey => 'Lana Del Grey')
+      // if string with spaces, add quotations (Cuban on My Mind => 'Cuban on My Mind')
       if (typeof value === "string" && value.indexOf(" ") >= 0) {
         value = "'" + value + "'";
-      } 
-      // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-      // e.g. {sleepy: true} => ["sleepy=true"]
+      }
+      // e.g. {name: 'Cuban on My Mind'} => ["name='Cuban on My Mind'"]
+      // e.g. {devoured: true} => ["devoured=true"]
       arr.push(key + "=" + value);
     }
- // }
+    // }
 
-  // translate array of strings to a single comma-separated string
-  return arr.toString();
-} 
+    // translate array of strings to a single comma-separated string
+    return arr.toString();
+  }
 }
 
 // Object for all our SQL statement functions.exit
 const orm = {
-  selectAll: function(tableInput, cb) {
+  selectAll: function (tableInput, cb) {
     let queryString = "SELECT * FROM " + tableInput + ";";
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
       cb(result);
     });
   },
-  insertOne: function(table, cols, vals, cb) {
+  insertOne: function (table, cols, vals, cb) {
     let queryString = "INSERT INTO " + table;
 
     queryString += " (";
@@ -63,8 +63,8 @@ const orm = {
 
     console.log(queryString);
 
-    //execute database query
-    connection.query(queryString, vals, function(err, result) {
+    //Execute database query
+    connection.query(queryString, vals, function (err, result) {
       if (err) {
         throw err;
       }
@@ -74,7 +74,7 @@ const orm = {
   },
 
   // Make a database entry
-  updateOne: function(table, objColVals, condition, cb) {
+  updateOne: function (table, objColVals, condition, cb) {
     let queryString = "UPDATE " + table;
 
     queryString += " SET ";
@@ -83,13 +83,11 @@ const orm = {
     queryString += condition;
 
     console.log(queryString);
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
-
       cb(result);
-
     });
   }
 };
