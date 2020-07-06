@@ -19,6 +19,7 @@
   "homepage": "https://github.com/koyeary/ebt-lobsters#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^4.0.4"
+    "express-handlebars": "^4.0.4",
+    "mysql": "^8.0.19"
   }
 }
