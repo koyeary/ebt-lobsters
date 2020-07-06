@@ -16,7 +16,7 @@ Burger Time! can be cloned from this repo. When cloning, please note the followi
 ## Setup
 
 + Run <code>npm install</code>
-+ Add your local credentials to connection.js
++ Add your local credentials to <code>connection.js</code>
 + Run the <code>schema.sql</code> file in your local MySQL
 + Run the <code>seeds.sql</code> file in your local MySQL
 + Run <code>node server.js</code> to start the server
