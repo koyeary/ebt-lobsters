@@ -15,13 +15,13 @@ Burger Time! can be cloned from this repo. When cloning, please note the followi
 
 ## Setup
 
-+ Run <npm install>
++ Run <code>npm install</code>
 + Add your local credentials to connection.js
-+ Run the <schema.sql> file in your local MySQL
-+ Run the <seeds.sql> file in your local MySQL
-+ Run <node server.js> to start the server
++ Run the <code>schema.sql</code> file in your local MySQL
++ Run the <code>seeds.sql</code> file in your local MySQL
++ Run <code>node server.js</code> to start the server
 
-You can also check out the app [id]: <https://ebt-lobsters.herokuapp.com/> "on heroku".
+You can also check out the app on heroku: https://ebt-lobsters.herokuapp.com/
 
 ## Author
 
