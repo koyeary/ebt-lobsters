@@ -21,6 +21,6 @@
     "node":  "^12.18.1",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
-    "mysql": "^8.0.2"
+    "mysql": "^8.0.20"
   }
 }
