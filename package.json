@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/koyeary/ebt-lobsters#readme",
   "dependencies": {
-    "node":  "^12.18.1",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4"
   }
