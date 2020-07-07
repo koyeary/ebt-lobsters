@@ -5,8 +5,15 @@ const connection = mysql.createConnection({
   port: 3306,
   user: "bb4d2e70a154e1",
   password: "84f229b1",
-  database: "burger_db"
+  database: "2998f7ef34ab971"
 });
+const del = connection._protocol._delegateError;
+connection._protocol._delegateError = function(err, sequence){
+  if (err.fatal) {
+    console.trace('fatal error: ' + err.message);
+  }
+  return del.call(this, err, sequence);
+};
 
 // Make connection.
 connection.connect(function(err) {
