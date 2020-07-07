@@ -27,4 +27,4 @@ connection.connect(function(err) {
 // Export connection for our ORM to use.
 module.exports = connection;
 
-mysql://bb4d2e70a154e1:84f229b1@us-cdbr-east-02.cleardb.com/heroku_2998f7ef34ab971?reconnect=true
+//mysql://bb4d2e70a154e1:84f229b1@us-cdbr-east-02.cleardb.com/heroku_2998f7ef34ab971?reconnect=true
