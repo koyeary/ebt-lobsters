@@ -1,11 +1,11 @@
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({
-  host: "us-cdbr-east-02.cleardb.com",
+  host: "localhost",
   port: 3306,
-  user: "bb4d2e70a154e1",
-  password: "84f229b1",
-  database: "heroku_2998f7ef34ab971"
+  user: "root",
+  password: "newPass",
+  database: "burger_db"
 });
 const del = connection._protocol._delegateError;
 connection._protocol._delegateError = function(err, sequence){
@@ -26,5 +26,3 @@ connection.connect(function(err) {
 
 // Export connection for our ORM to use.
 module.exports = connection;
-
-//mysql://bb4d2e70a154e1:84f229b1@us-cdbr-east-02.cleardb.com/heroku_2998f7ef34ab971?reconnect=true
