@@ -5,7 +5,7 @@ const connection = mysql.createConnection({
   port: 3306,
   user: "bb4d2e70a154e1",
   password: "84f229b1",
-  database: "2998f7ef34ab971"
+  database: "heroku_2998f7ef34ab971"
 });
 const del = connection._protocol._delegateError;
 connection._protocol._delegateError = function(err, sequence){
@@ -26,3 +26,5 @@ connection.connect(function(err) {
 
 // Export connection for our ORM to use.
 module.exports = connection;
+
+mysql://bb4d2e70a154e1:84f229b1@us-cdbr-east-02.cleardb.com/heroku_2998f7ef34ab971?reconnect=true
