@@ -1,11 +1,11 @@
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({
-  host: "localhost",
+  host: "us-cdbr-east-02",
   port: 3306,
-  user: "katyeary",
-  password: "newPass",
-  database: "burger_db"
+  user: "b7bebe3c057cd2",
+  password: "76f12c79",
+  database: "heroku_d71186c4e54591c"
 });
 const del = connection._protocol._delegateError;
 connection._protocol._delegateError = function(err, sequence){
