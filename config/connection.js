@@ -1,12 +1,13 @@
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({
-  host: "us-cdbr-east-02.cleardb.com",
+  host: "e11wl4mksauxgu1w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   port: 3306,
-  user: "b7bebe3c057cd2",
-  password: "76f12c79",
-  database: "heroku_d71186c4e54591c"
+  user: "ffsj06861v9ys788",
+  password: "yejq6tk7veq707i0",
+  database: "igkbrpw7vdlwqaar"
 });
+
 // Make connection.
 connection.connect(function(err) {
   if (err) {
