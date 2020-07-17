@@ -22,8 +22,9 @@
   },
   "homepage": "https://github.com/koyeary/ebt-lobsters#readme",
   "dependencies": {
-    "mysql": ">=2.5.0",
     "express": "^4.17.1",
-    "express-handlebars": "^4.0.4"
+    "express-handlebars": "^4.0.4",
+    "mysql": ">=2.5.0",
+    "mysql2": "^2.1.0"
   }
 }
